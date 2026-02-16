@@ -23,3 +23,10 @@ DATASET_PATH:str=os.path.join('dataset','phisingData.csv')
 MONGODB_URL:str=MONGODB_URL
 DATABASE:str='NetworkSecurity'
 COLLECTIONS:str='NetworkSecurityDataset'
+
+DATA_VALIDATION_DIR:str='data_validation'
+VALID_DATA_DIR:str='valid_data'
+INVALID_DATA_DIR:str='invalid_data'
+DRIFT_REPORT_DIR:str='drift_report'
+DRIFT_REPORT_NAME:str='drift_report.yaml'
+SCHEMA_FILE:str=os.path.join('data_schema','schema.yaml')

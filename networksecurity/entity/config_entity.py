@@ -31,3 +31,36 @@ class DataIngestionConfig:
         self.test_data_path=os.path.join(
             self.ingested_data_dir,training_constants.TEST_DATA
         )
+
+
+class DataValidationConfig:
+    def __init__(self,train_paths=Training_Path):
+        self.data_validation_dir=os.path.join(
+            train_paths.training_path,training_constants.DATA_VALIDATION_DIR
+        )
+
+        self.valid_data_dir=os.path.join(
+            self.data_validation_dir,training_constants.VALID_DATA_DIR
+        )
+        self.valid_train_data_file=os.path.join(
+            self.valid_data_dir,training_constants.TRAIN_DATA
+        )
+        self.valid_test_data_file=os.path.join(
+            self.valid_data_dir,training_constants.TEST_DATA
+        )
+        self.invalid_data_dir=os.path.join(
+            self.data_validation_dir,training_constants.INVALID_DATA_DIR
+        )
+        self.invalid_train_data_file=os.path.join(
+            self.invalid_data_dir,training_constants.TRAIN_DATA
+        )
+        self.invalid_test_data_file=os.path.join(
+            self.invalid_data_dir,training_constants.TEST_DATA
+        )
+
+        self.drift_report_dir=os.path.join(
+            self.data_validation_dir,training_constants.DRIFT_REPORT_DIR
+        )
+        self.drift_report_path=os.path.join(
+            self.drift_report_dir,training_constants.DRIFT_REPORT_NAME
+        )
