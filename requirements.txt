@@ -9,6 +9,7 @@ python-dotenv
 scipy
 dill
 pyaml
-
+dagshub
+mlflow
 
 -e .

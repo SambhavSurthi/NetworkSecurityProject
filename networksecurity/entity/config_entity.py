@@ -94,3 +94,24 @@ class DataTransformationConfig:
         self.transformed_obj_file=os.path.join(
             self.transformed_obj_dir,training_constants.PREPROCESSING_OBJ
         )
+
+
+class ModelTrainerConfig:
+    def __init__(self, training_pipeline_config: Training_Path):
+
+        self.model_trainer_dir = os.path.join(
+            training_pipeline_config.training_path,
+            training_constants.MODEL_TRAINER_DIR_NAME
+        )
+
+        self.trained_model_file_path = os.path.join(
+            self.model_trainer_dir,
+            training_constants.MODEL_TRAINER_TRAINED_MODEL_DIR,
+            training_constants.MODEL_FILE_NAME
+        )
+
+        self.expected_accuracy = training_constants.MODEL_TRAINER_EXPECTED_SCORE
+
+        self.overfitting_underfitting_threshold = (
+            training_constants.MODEL_TRAINER_OVER_FIITING_UNDER_FITTING_THRESHOLD
+        )
