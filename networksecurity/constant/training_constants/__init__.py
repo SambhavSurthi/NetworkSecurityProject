@@ -30,3 +30,17 @@ INVALID_DATA_DIR:str='invalid_data'
 DRIFT_REPORT_DIR:str='drift_report'
 DRIFT_REPORT_NAME:str='drift_report.yaml'
 SCHEMA_FILE:str=os.path.join('data_schema','schema.yaml')
+
+
+DATA_TRANSFORMATION_DIR:str='data_transformation'
+TRANSFORMED_DIR:str='transformed'
+TRANSFORMED_OBJ_DIR:str='transformed_obj'
+PREPROCESSING_OBJ:str='preprocessing.pkl'
+TRANSFORMED_TRAIN_FILE:str='train.npy'
+TRANSFORMED_TEST_FILE:str='test.npy'
+DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
+    "missing_values": np.nan,
+    "n_neighbors": 3,
+    "weights": "uniform",
+}
+TARGET_COLUMN='Result'
