@@ -11,5 +11,9 @@ dill
 pyaml
 dagshub
 mlflow
+FastAPI
+uvicorn
+python-multipart
+
 
 -e .
